@@ -1,0 +1,166 @@
+#searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #7b5cff;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #7765a9;
+}
+/* Style for the table */
+#resultTable {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 85px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  display: none;
+}
+
+/* Style for the table head */
+#resultTable thead {
+  background-color: #5f3ac5;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+#resultTable th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#resultTable th:first-child {
+  border-top-left-radius: 10px;
+}
+
+#resultTable th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Style for the table body */
+#resultTable tbody {
+  background-color: #fff;
+}
+
+#resultTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+#resultTable td:first-child {
+  font-weight: bold;
+}
+
+/* Style for the table footer */
+#resultTable tfoot {
+  background-color: #5f3ac5;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+#resultTable tfoot td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#errMessage {
+  display: block;
+  background-color: #ffcccc;
+  color: #cc0000;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Default styles for the table */
+#resultTable2 {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px 0;
+}
+
+#resultTable2 td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+#resultTable2 td:first-child {
+  font-weight: bold;
+}
+
+#resultTable2 thead td {
+  font-weight: bold;
+  background-color: #5f3ac5;
+  color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#resultTable2 tfoot td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #5f3ac5;
+  color: #fff;
+  border-top: none;
+}
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 600px) {
+  #resultTable2 {
+    width: auto;
+    margin: 20px 0;
+  }
+
+  #resultTable2 td {
+    width: 100%;
+  }
+
+  #resultTable2 td:first-child {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  #resultTable2 td.v {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #resultTable2 tfoot td {
+    font-size: 1.2rem;
+  }
+}
