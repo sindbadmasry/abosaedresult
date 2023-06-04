@@ -178,25 +178,26 @@ footer span {font-weight: bold;color: var(--maincolor)}
     border-radius: 5px;
   }
   /* Default styles for the table */
-  #resultTable2 {
+  .resultTable2 {
     display: none;
     width: 100%;
     border-collapse: collapse;
-    margin: 50px 0;
+    margin: 10px 0;
   }
   
-  #resultTable2 td {
-    padding: 10px;
+  .resultTable2 td {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     border: 1px solid #ddd;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
-  #resultTable2 td:first-child {
+  .resultTable2 td:first-child {
     font-weight: bold;
   }
   
-  #resultTable2 thead td {
+  .resultTable2 thead td {
     font-weight: bold;
     background-color: #967eda;
     color: #fff;
@@ -204,7 +205,7 @@ footer span {font-weight: bold;color: var(--maincolor)}
     padding: 10px;
   }
   
-  #resultTable2 tfoot td {
+  .resultTable2 tfoot td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
@@ -217,26 +218,26 @@ footer span {font-weight: bold;color: var(--maincolor)}
   
   /* Styles for mobile screens */
   @media only screen and (max-width: 600px) {
-    #resultTable2 {
+    .resultTable2 {
       width: auto;
       margin: 20px 0;
     }
   
-    #resultTable2 td {
+    .resultTable2 td {
       width: 100%;
     }
   
-    #resultTable2 td:first-child {
+    .resultTable2 td:first-child {
       margin-top: 10px;
       font-size: 1.2rem;
     }
   
-    #resultTable2 td.v {
-      font-weight: bold;
+    .resultTable2 td.v {
+      font-weight:bold;
       margin-bottom: 10px;
     }
   
-    #resultTable2 tfoot td {
+    .resultTable2 tfoot td {
       font-size: 1.2rem;
     }
   }
